@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components { 
+  body {
+    @apply bg-black text-white font-sans
+  }
+  .links-mobile{
+    @apply flex flex-col gap-4 absolute top-0 left-0 bg-black w-full items-center mt-16;
+  }
+  .journey {
+    background-image: url('../public/journey.jpg');
+  }
+  p {
+    @apply mb-4 sm:text-xl;
+  }
+  .big-number {
+  -webkit-text-fill-color: rgba(0,0,0,0);
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #fff;
+  }
+  .h-400 {
+    height: 30rem;
+  }
+}
